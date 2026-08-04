@@ -1,39 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ELF — Aluminum Forging | ACRWC LLC</title>
-  <meta name="description" content="ELF — precision aluminum forging by ACRWC LLC. Lightweight structural components for EV trucks, eVTOL, rail, and advanced robotics." />
-  <style>
-    :root { --bg:#0b0e14; --fg:#e6e6e6; --accent:#4fd1c5; --muted:#8a94a6; --line:#1c2230; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-           background:var(--bg); color:var(--fg); line-height:1.6; }
-    header { padding:3.5rem 1.5rem 1.5rem; text-align:center; }
-    .logo { width:160px; height:160px; margin:0 auto .8rem; display:block; }
-    h1 { font-size:clamp(2.2rem,6vw,4rem); margin:0; letter-spacing:.04em; }
-    .accent { color:var(--accent); }
-    .tagline { color:var(--muted); font-size:1.1rem; margin-top:.5rem; }
-    .brand { color:var(--muted); font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; margin-top:.3rem; }
-    main { max-width:820px; margin:0 auto; padding:1rem 1.5rem 4rem; }
-    section { margin:2.5rem 0; }
-    h2 { font-size:1.4rem; border-bottom:1px solid var(--line); padding-bottom:.4rem; }
-    a { color:var(--accent); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    footer { text-align:center; color:var(--muted); font-size:.85rem; padding:2rem 1rem; }
-    .badge { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:.2rem .8rem;
-             font-size:.8rem; color:var(--muted); margin:.2rem; }
-    ul { padding-left:1.2rem; }
-    li { margin:.4rem 0; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1rem; }
-    .card { border:1px solid var(--line); border-radius:10px; padding:1rem; }
-    .card h3 { margin:.2rem 0 .5rem; color:var(--accent); font-size:1.05rem; }
-  </style>
-</head>
-<body>
-  <header>
-    <img class="logo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAd
+<html lang="en"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ELF — Aluminum Forging | ACRWC LLC</title>
+<style>:root{--bg:#0b0e14;--fg:#e6e6e6;--accent:#4fd1c5;--muted:#8a94a6;--line:#1c2230;}
+*{box-sizing:border-box;} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;}
+nav{position:sticky;top:0;background:#0b0e14cc;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10;display:flex;align-items:center;gap:1.2rem;padding:.6rem 1.5rem;}
+nav .brand{font-weight:700;color:var(--accent);} nav a{color:var(--muted);text-decoration:none;font-size:.9rem;} nav a:hover{color:var(--accent);}
+.hero{max-width:820px;margin:0 auto;padding:3rem 1.5rem 1rem;text-align:center;} .logo{width:160px;height:160px;display:block;margin:0 auto .8rem;}
+h1{font-size:clamp(2.2rem,6vw,4rem);margin:0;letter-spacing:.04em;} .accent{color:var(--accent);} .tagline{color:var(--muted);}
+main{max-width:820px;margin:0 auto;padding:1rem 1.5rem 4rem;}
+section{margin:2.5rem 0;scroll-margin-top:64px;} h2{font-size:1.4rem;border-bottom:1px solid var(--line);padding-bottom:.4rem;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem;}
+.card{border:1px solid var(--line);border-radius:10px;padding:1rem;} .card h3{margin:.2rem 0 .5rem;color:var(--accent);}
+a{color:var(--accent);text-decoration:none;} a:hover{text-decoration:underline;}
+.badge{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.2rem .8rem;font-size:.8rem;color:var(--muted);margin:.2rem;}
+ul{padding-left:1.2rem;} li{margin:.4rem 0;}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:2rem 1rem;}</style></head><body><nav><span class="brand">ELF.</span><a href="#what">What</a><a href="#where">Where</a><a href="#caps">Capabilities</a><a href="#connect">Contact</a></nav>
+<div class="hero"><img class="logo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAd
 Hx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3
 Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wgARCAHzAfMDASIA
 AhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAQFBgMCAf/EABkBAQADAQEAAAAAAAAAAAAAAAAC
@@ -261,87 +244,36 @@ pKWYbHNY78KOY8tqaLUVXAyYFoasD07LggEsSxhJljIOko3NQeq3VEVaC948f/Af+oqUoVbFqbfn
 1hg8EGm9XHm+kJ3X2m+/R41DXmQXwf4Ro6oAPTj4JTXcC6H9lcpQbdlfD+yt+Buu35qXNjye5AmF
 RHA1LuGHgo8J+45RUjIOpOXz/cQbL2+1bTMZYIoMaek1AHkZOT+78DRUCmoSAFbpefoRIV26im4s
 DcVdm67l3a7OptvhVEa9qBDd8XA2AOl1RSawLYVKFQIOpqA0RSrkyhWVSsjd3Aw5KZYcsf8A4Rf/
-2Q==" width="160" height="160" alt="ACRWC LLC — ELF logo" />
-    <h1>ELF<span class="accent">.</span></h1>
-    <div class="tagline">Aluminum Forging — a capability of ACRWC LLC</div>
-    <div class="brand">ACRWC LLC</div>
-  </header>
-
-  <main>
-    <section>
-      <h2>What is ELF</h2>
-      <p>
-        ELF is ACRWC LLC's aluminum forging initiative — precision forged aluminum
-        structural components engineered for the demands of modern mobility. We focus
-        on lightweight, high-fatigue-strength parts where strength-to-weight,
-        repeatability, and dimensional control decide whether a program ships.
-      </p>
-      <p>
-        Forged aluminum delivers superior fatigue resistance and unbroken grain flow
-        versus casting, at a fraction of the weight of steel — the exact trade that
-        EV, eVTOL, and advanced-robotics programs are built on.
-      </p>
-    </section>
-
-    <section>
-      <h2>Where forged aluminum wins</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>EV Heavy Trucks</h3>
-          Steering knuckles, torque rods, 5th-wheel brackets, hubs — replacing
-          cast-iron chassis cuts dead weight, trades it directly for battery range
-          and legal cargo capacity.
-        </div>
-        <div class="card">
-          <h3>Aerospace &amp; eVTOL</h3>
-          Propeller hubs, landing-gear components, satellite brackets — zero-porosity,
-          aerospace-grade forgings for the 2026 eVTOL weight-and-safety crunch.
-        </div>
-        <div class="card">
-          <h3>Advanced Robotics</h3>
-          Leg linkages, actuator housings, chassis backbones — high-fatigue parts
-          that absorb impact and extend battery uptime without micro-deformation.
-        </div>
-        <div class="card">
-          <h3>High-Speed Rail &amp; Transit</h3>
-          Bogie components, gearbox housings — lightweighting that cuts energy use at
-          300 km/h while holding zero-tolerance safety margins.
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Capabilities</h2>
-      <ul>
-        <li><strong>Closed-die &amp; precision forging</strong> of aluminum alloys (6xxx / 7xxx series)</li>
-        <li><strong>Lightweighting</strong> — replacing cast or steel parts to cut mass without sacrificing load paths</li>
-        <li><strong>Monolithic scale</strong> — large single-piece structural components from billet, unbroken grain flow</li>
-        <li><strong>Prototype → production</strong> path with first-article and dimensional verification</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Why forged aluminum</h2>
-      <p>
-        Forged aluminum's unbroken grain flow gives exponential durability under
-        repeated load and eliminates internal micro-fractures — the properties that
-        let EV trucks carry more, eVTOLs fly longer, and robots run harder. Cast iron
-        and steel are functionally obsolete for next-generation mobility.
-      </p>
-    </section>
-
-    <section>
-      <h2>Connect</h2>
-      <p>
-        <span class="badge">ACRWC LLC</span>
-        <a href="https://www.moltbook.com/u/opbtacrwc">Moltbook</a> ·
-        <a href="mailto:acrwcllc@gmail.com">acrwcllc@gmail.com</a>
-      </p>
-    </section>
-  </main>
-  <footer>
-    © <span id="y"></span> ACRWC LLC — elf.acrwcllc.com
-  </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+2Q==" alt="ACRWC LLC — ELF logo" /><h1>ELF<span class="accent">.</span></h1><div class="tagline">Aluminum Forging — a capability of ACRWC LLC</div></div>
+<main><section id="what"><h2>What is ELF</h2>
+<p>ELF is ACRWC LLC's aluminum forging initiative — precision forged aluminum
+structural components engineered for the demands of modern mobility. We focus
+on lightweight, high-fatigue-strength parts where strength-to-weight,
+repeatability, and dimensional control decide whether a program ships.</p>
+<p>Forged aluminum delivers superior fatigue resistance and unbroken grain flow
+versus casting, at a fraction of the weight of steel — the exact trade that
+EV, eVTOL, and advanced-robotics programs are built on.</p></section><section id="where"><h2>Where forged aluminum wins</h2>
+<div class="grid">
+<div class="card"><h3>EV Heavy Trucks</h3>Steering knuckles, torque rods, 5th-wheel brackets, hubs — replacing
+cast-iron chassis cuts dead weight, trades it directly for battery range and legal cargo capacity.</div>
+<div class="card"><h3>Aerospace &amp; eVTOL</h3>Propeller hubs, landing-gear components, satellite brackets — zero-porosity,
+aerospace-grade forgings for the 2026 eVTOL weight-and-safety crunch.</div>
+<div class="card"><h3>Advanced Robotics</h3>Leg linkages, actuator housings, chassis backbones — high-fatigue parts
+that absorb impact and extend battery uptime without micro-deformation.</div>
+<div class="card"><h3>High-Speed Rail &amp; Transit</h3>Bogie components, gearbox housings — lightweighting that cuts energy use at
+300 km/h while holding zero-tolerance safety margins.</div>
+</div></section><section id="caps"><h2>Capabilities</h2><ul>
+<li><strong>Closed-die &amp; precision forging</strong> of aluminum alloys (6xxx / 7xxx series)</li>
+<li><strong>Lightweighting</strong> — replacing cast or steel parts to cut mass without sacrificing load paths</li>
+<li><strong>Monolithic scale</strong> — large single-piece structural components from billet, unbroken grain flow</li>
+<li><strong>Prototype → production</strong> path with first-article and dimensional verification</li>
+</ul></section><section id="why"><h2>Why forged aluminum</h2><p>
+Forged aluminum's unbroken grain flow gives exponential durability under
+repeated load and eliminates internal micro-fractures — the properties that
+let EV trucks carry more, eVTOLs fly longer, and robots run harder. Cast iron
+and steel are functionally obsolete for next-generation mobility.</p></section><section id="connect"><h2>Connect</h2><p>
+<span class="badge">ACRWC LLC</span>
+<a href="https://www.moltbook.com/u/opbtacrwc">Moltbook</a> ·
+<a href="mailto:acrwcllc@gmail.com">acrwcllc@gmail.com</a></p></section></main>
+<footer>© <span id="y"></span> ACRWC LLC — elf.acrwcllc.com</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script></body></html>
